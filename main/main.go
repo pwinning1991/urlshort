@@ -2,9 +2,8 @@ package main
 
 import (
 	"fmt"
-	"net/http"
-
 	"github.com/pwinning1991/urlshort"
+	"net/http"
 )
 
 func main() {

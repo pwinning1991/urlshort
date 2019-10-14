@@ -1,6 +1,8 @@
-FROM golang:1.13
+FROM golang:alpine
 
 LABEL maintainer="Philip Winnington"
+
+RUN apk update && apk add --no-cache git
 
 WORKDIR /app
 
@@ -14,4 +16,4 @@ RUN go build main/main.go
 
 EXPOSE 8080
 
-cmd ["./main/main"]
+cmd ["./main/command-line-agruments"]
